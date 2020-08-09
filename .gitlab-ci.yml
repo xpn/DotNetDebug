@@ -1,0 +1,15 @@
+stages:
+  - build
+
+before_script:
+  - set-mppreference -disablerealtimemonitoring $true
+  
+test:
+  stage: build
+  tags:
+    - windows
+  script: 
+    - . "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\MSBuild\\Current\\Bin\\msbuild.exe" /property:Platform=x64 DotNetDebug.sln
+  artifacts:
+      paths:
+        - x64/*

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${vcpkgRoot}/x64-osx/include"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks",
+                "./DotNetDebug/",
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/i686-w64-mingw32/include/c++/9.3.0/i686-w64-mingw32/", 
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/i686-w64-mingw32/include/",
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/i686-w64-mingw32/include/c++/9.3.0/",
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/lib/gcc/i686-w64-mingw32/9.3.0/include",
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/lib/gcc/i686-w64-mingw32/9.3.0/include-fixed", 
+                "/usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-i686/lib/gcc/i686-w64-mingw32/9.3.0/../../../../i686-w64-mingw32/include"
+            ],
+            "intelliSenseMode": "msvc-x86"
+        }
+    ],
+    "version": 4
+}
