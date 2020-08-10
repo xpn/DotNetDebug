@@ -16,13 +16,17 @@ This tool can be run in the following modes:
 
 * attach - Attaches to a running process by name
 * attachpid - Attached to a running process via PID
-* launch - Launches a new process an attaches the debugger on start
+* launch - Launches a new process and attaches the debugger on start
+
+By default, the injected .NET payload will attempt to load an assembly from C:\Windows\Temp\inject.exe and execute its entrypoint.
 
 For example:
 
 ```
 DotNetDebug.exe launch C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
 ```
+
+Note: Ensure that if you are running the x64 version of the tool, you are only targeting x64 compiled .NET processes.
 
 ## Remember your COMPlus
 
